@@ -1,25 +1,30 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * *main - entry point
- * *
- * *Return: 0 after printing the function
- * *Description -when the main is executed
- * */
+ *  * main - Print if the numbe is positive, zero or negative.
+ *  *
+ *  * Return: Always 0
+ *  */
 int main(void)
 {
-int n;
+	        int n;
 
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-if (n > 0)
-printf("%d is positive\n", n);
-if (n == 0)
-printf("%d is zero\n", n);
-if (n < 0)
-{
-printf("%d is negative\n", n);
+	        srand(time(0));
+	        n = rand() - RAND_MAX / 2;
+	        /*your code goes there*/
+		        if (n > 0)
+		        {
+			                printf("%i is positive\n", n);
+			        }
+	        else if (n == 0)
+		        {
+			                printf("%i is zero\n", n);
+			        }
+	        else if (n < 0)
+		        {
+			                printf("%i is negative\n", n);
+			        }
+	        return (0);
 }
-return (0);
-}}
