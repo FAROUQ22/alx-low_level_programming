@@ -3,7 +3,7 @@
 #include <time.h>
 /* more headers goes there */
 /*
-*main - it's a start point of the program
+*main -Entry point
 *return: always 0, success
 */
 int main(void)
@@ -13,16 +13,20 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n>0 || n<0){
-	    if (n>0){
-	        printf(" %d is positive number", n);
+	if (n > 0 || n < 0)
+	{
+	    if (n > 0)
+	    {
+	        printf("\" %d is positive", n);
 	    }
-	    else{
-	        printf("%d is negative number", n);
+	    else
+	    {
+	        printf("\" %d is negative", n);
 	    }
 	}
-	else{
-	    printf("%d is zero", n);
+	else
+	{
+	    printf("\" %d is zero\n", n);
 	}
 	return (0);
 }
