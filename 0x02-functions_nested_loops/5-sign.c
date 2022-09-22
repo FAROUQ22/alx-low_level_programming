@@ -1,4 +1,4 @@
-#include "main.h"
+# include "main.h"
 /**
  * print_sign-check the sign of a number.
  *
@@ -8,19 +8,19 @@
 
 int print_sign(int n)
 {
-		if (n > 0)
-		{
+	if (n > 0)
+	{
 		_putchar('+');
 		return (1);
-		}
-		else if (n < 0)
-		{
-		putchar ('-');
+	}
+	else if (n < 0)
+	{
+		_putchar ('-');
 		return (-1);
-		}
-		else
-		{
+	}
+	else
+	{
 		_putchar('0');
 		return (0);
-		}
+	}
 }
